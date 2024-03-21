@@ -1,0 +1,38 @@
+<section class="container-fluid">
+  <form
+    class="row d-flex flex-column align-items-center justify-content-center mt-3"
+    [formGroup]="loginForm"
+    (ngSubmit)="onSubmit()">
+
+    <mat-form-field
+      class="col-md-4 col-12 mt-3"
+      [formGroup]="loginForm"
+    >
+      <input
+        matInput
+        type="email"
+        placeholder="Your email"
+        formControlName="email"
+      >
+      <mat-hint>Please enter your email</mat-hint>
+      <mat-error>Invalid email</mat-error>
+    </mat-form-field>
+    <mat-form-field class="col-md-4 col-12 mt-3">
+      <input
+        matInput
+        type="password"
+        placeholder="Your password"
+        formControlName="password"
+        minlength="6"
+      >
+      <mat-hint>Please enter your password</mat-hint>
+      <mat-error>Invalid password</mat-error>
+    </mat-form-field>
+    <button
+      [disabled]="loginForm.invalid"
+      type="submit"
+      class="col-md-2 col-6 mt-3"
+      mat-raised-button
+      color="primary">Sign up</button>
+  </form>
+</section>

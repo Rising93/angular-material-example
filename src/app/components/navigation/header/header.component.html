@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <button
+    mat-icon-button
+    (click)="onToggleSideNav()"
+    class="d-md-none"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <span>Angular Material</span>
+  <div class="container-fluid">
+    <div class="d-md-flex d-none justify-content-end">
+      <a routerLink="/login"><span class="mx-2">Login</span></a>
+      <a routerLink="/signup"><span class="mx-2">Signup</span></a>
+      <a routerLink="/training"><span class="mx-2">Training</span></a>
+      <button mat-icon-button>
+        <mat-icon>exit_to_app</mat-icon>
+      </button>
+    </div>
+  </div>
+
+
+
+  <ul>
+
+  </ul>
+
+</mat-toolbar>
