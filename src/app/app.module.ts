@@ -18,6 +18,7 @@ import { HeaderComponent } from './components/navigation/header/header.component
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,14 +32,14 @@ import { HeaderComponent } from './components/navigation/header/header.component
     SidenavListComponent,
     HeaderComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-    FormsModule,
-    ReactiveFormsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MaterialModule,
+        FormsModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

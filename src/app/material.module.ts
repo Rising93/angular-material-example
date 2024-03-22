@@ -3,12 +3,15 @@ import {MatInputModule} from "@angular/material/input";
 import {MatButtonModule} from "@angular/material/button";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatDatepickerModule} from "@angular/material/datepicker";
-import { MAT_DATE_LOCALE, MatNativeDateModule, MAT_DATE_FORMATS } from '@angular/material/core';
+import {MAT_DATE_LOCALE, MatNativeDateModule, MAT_DATE_FORMATS, MatOptionModule} from '@angular/material/core';
 import {MatCheckboxModule} from "@angular/material/checkbox";
-import {MatSidenav, MatSidenavModule} from "@angular/material/sidenav";
+import { MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatCardModule} from "@angular/material/card";
+import {MatSelectModule} from "@angular/material/select";
 
 export const MY_DATE_FORMATS = {
   parse: {
@@ -32,7 +35,11 @@ export const MY_DATE_FORMATS = {
       MatSidenavModule,
       MatListModule,
       MatToolbarModule,
-      MatIconModule
+      MatIconModule,
+      MatTabsModule,
+      MatCardModule,
+      MatSelectModule,
+      MatOptionModule
     ],
     exports: [
       MatInputModule,
@@ -44,7 +51,11 @@ export const MY_DATE_FORMATS = {
       MatSidenavModule,
       MatListModule,
       MatToolbarModule,
-      MatIconModule
+      MatIconModule,
+      MatTabsModule,
+      MatCardModule,
+      MatSelectModule,
+      MatOptionModule
     ],
     providers: [
       {provide: MAT_DATE_LOCALE, useValue: 'en-GB'},

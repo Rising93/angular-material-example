@@ -1,1 +1,40 @@
-<p>new-training works!</p>
+<div class="container-fluid">
+  <section class="row d-flex align-items-center justify-content-center p-3">
+
+    <div class="col-12 col-md-6 text-center">
+
+      <mat-card>
+
+        <mat-card-title>Time to start a workout!</mat-card-title>
+
+        <mat-card-content>
+            <mat-form-field>
+              <mat-label>Select your training</mat-label>
+              <mat-select>
+                <mat-option
+                  *ngFor="let training of typeTraining"
+                  [value]="training.value">
+                  {{training.name}}
+                </mat-option>
+              </mat-select>
+            </mat-form-field>
+        </mat-card-content>
+
+        <mat-card-actions>
+          <button
+            mat-raised-button
+            color="primary"
+            type="submit"
+            (click)="onStartTraining()"
+          >
+            Start
+          </button>
+        </mat-card-actions>
+
+      </mat-card>
+
+    </div>
+
+  </section>
+</div>
+
