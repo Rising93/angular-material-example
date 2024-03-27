@@ -33,6 +33,7 @@ export class SignupComponent implements OnInit {
           Validators.required,
           Validators.requiredTrue
         ]
+
       })
     });
     this.maxDate = new Date();
