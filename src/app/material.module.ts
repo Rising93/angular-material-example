@@ -12,6 +12,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatTabsModule} from "@angular/material/tabs";
 import {MatCardModule} from "@angular/material/card";
 import {MatSelectModule} from "@angular/material/select";
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 
 export const MY_DATE_FORMATS = {
   parse: {
@@ -39,24 +40,26 @@ export const MY_DATE_FORMATS = {
       MatTabsModule,
       MatCardModule,
       MatSelectModule,
-      MatOptionModule
+      MatOptionModule,
+      MatProgressSpinnerModule
     ],
-    exports: [
-      MatInputModule,
-      MatButtonModule,
-      MatFormFieldModule,
-      MatDatepickerModule,
-      MatNativeDateModule,
-      MatCheckboxModule,
-      MatSidenavModule,
-      MatListModule,
-      MatToolbarModule,
-      MatIconModule,
-      MatTabsModule,
-      MatCardModule,
-      MatSelectModule,
-      MatOptionModule
-    ],
+  exports: [
+    MatInputModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatCheckboxModule,
+    MatSidenavModule,
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatTabsModule,
+    MatCardModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatProgressSpinnerModule
+  ],
     providers: [
       {provide: MAT_DATE_LOCALE, useValue: 'en-GB'},
       {provide: MAT_DATE_FORMATS, useValue: MY_DATE_FORMATS},

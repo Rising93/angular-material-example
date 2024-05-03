@@ -1,1 +1,12 @@
-<p>current-training works!</p>
+<section class="container-fluid">
+    <div class="row d-flex flex-column align-items-center justify-content-center mt-3">
+        <mat-spinner
+          mode="determinate"
+          value="40"
+          class="col-4 col-md-4 text-center"
+        ></mat-spinner>
+      <h1 class="col-4 col-md-4 text-center">{{ 'progress' | labelManager }}</h1>
+      <p class="col-4 col-md-4 text-center">{{ 'keepGoing' | labelManager }}</p>
+      <button class="col-4 col-md-4 text-center" mat-raised-button color="accent">{{'stop' | labelManager}}</button>
+    </div>
+</section>

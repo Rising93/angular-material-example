@@ -14,8 +14,8 @@
         placeholder="Your email"
         formControlName="email"
       >
-      <mat-hint>Please enter your email</mat-hint>
-      <mat-error>Invalid email</mat-error>
+      <mat-hint>{{ 'enterEmail' | labelManager}}</mat-hint>
+      <mat-error>{{'invalidEmail' | labelManager}}</mat-error>
     </mat-form-field>
     <mat-form-field class="col-md-4 col-12 mt-3">
       <input
