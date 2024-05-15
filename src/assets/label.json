@@ -5,6 +5,8 @@
 
 
   "enterEmail": "Please enter your email",
-  "invalidEmail": "Invalid email"
+  "enterPassword": "Please enter your password",
+  "invalidEmail": "Invalid email",
+  "invalidPassword": "Invalid email"
 
 }

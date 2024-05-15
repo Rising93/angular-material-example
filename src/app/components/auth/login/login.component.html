@@ -25,8 +25,8 @@
         formControlName="password"
         minlength="6"
       >
-      <mat-hint>Please enter your password</mat-hint>
-      <mat-error>Invalid password</mat-error>
+      <mat-hint>{{ 'enterPassword' | labelManager}}</mat-hint>
+      <mat-error>{{ 'invalidPassword' | labelManager}}</mat-error>
     </mat-form-field>
     <button
       [disabled]="loginForm.invalid"
